@@ -1,7 +1,6 @@
 # Question-and-answer
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is my 3rd JavaScript solo project for Epicodus.
 
 ## Prerequisites
 
@@ -19,6 +18,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember install ember-bootstrap`
 
 ## Running / Development
 
@@ -50,4 +50,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
