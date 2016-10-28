@@ -19,9 +19,9 @@
   }],
   "answers": [{
     "author": "Larry",
-    "answer": "The answer is 4."
+    "content": "The answer is 4."
   }, {
     "author": "Hank",
-    "answer": "Google it"
+    "content": "Google it"
   }]
 }

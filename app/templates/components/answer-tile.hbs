@@ -1,6 +1,6 @@
 <div class="well" id="answers">
   <div class="well" id="answerWell">
-    <h8>{{answer.answer}}<br> - by {{answer.author}}</h8>
+    <h8>{{answer.content}}<br> - by {{answer.author}}</h8>
   </div>
   {{update-answer answer=answer update="update"}}
   <button id="delButton" {{action 'delete' answer}}>Delete Answer</button>
