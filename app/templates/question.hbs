@@ -1,17 +1,12 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-       <div class= "well" id="postBody">
-         <h1>{{model.title}}</h1>
-         <h3>{{model.author}}</h3>
-         <p>{{model.date}}</p>
-         <p>{{model.content}}</p>
-         <p><img src="{{model.avatar}}"></p>
-         {{update-question question=model update="update"}}
-       </div>
-    </div>
-  </div>
+<div class= "well" id="postBody">
+ <h1>{{model.title}}</h1>
+ <h3>{{model.author}}</h3>
+ <p>{{model.date}}</p>
+ <p>{{model.content}}</p>
+ <p><img src="{{model.avatar}}"></p>
+ {{update-question question=model update="update"}}
 </div>
+
 
 {{new-answer saveAnswer="saveAnswer" question=model destroyAnswer='destroyAnswer' update='update'}}
 <br>

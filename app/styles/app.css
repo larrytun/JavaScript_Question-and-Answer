@@ -2,3 +2,47 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+#answerWell{
+  background-color: #d1fffa;
+}
+
+#navBar{
+  background-color: #d1fffa;
+  text-align: center;
+}
+
+#postBody, #multipleAnswers {
+  background-color: #fdedff;
+}
+
+
+.jumbotron h1 {
+  text-align: center;
+  color: blue;
+  font-family: 'Luckiest Guy', cursive !important;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: #fdedff;
+  margin-top: 30px;
+}
+
+p, h1, h2, h3 ,h4 ,h5, h6, h7, h8, a{
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/564x/b8/b1/08/b8b1087a916a75733f3addd820de6476.jpg");
+}
+
+button {
+  border-radius: 10px;
+  background-color: #d1fffa;
+  border-color: #bababa;
+}
+
+#header {
+  font-size: 90px;
+}
