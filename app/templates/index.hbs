@@ -1,5 +1,5 @@
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
@@ -7,3 +7,5 @@
 <div class ="well">
   {{new-question saveQuestion2="saveQuestion3"}}
 </div>
+
+{{new-answer saveAnswer="saveAnswer"}}
