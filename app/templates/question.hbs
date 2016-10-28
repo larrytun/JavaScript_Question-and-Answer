@@ -1,1 +1,19 @@
-{{outlet}}
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+       <div class= "well" id="postBody">
+         <h1>{{model.title}}</h1>
+         <h3>{{model.author}}</h3>
+         <p>{{model.date}}</p>
+         <p>{{model.content}}</p>
+         <p><img src="{{model.avatar}}"></p>
+         <button {{action 'delete' post}}>Delete</button>
+         {{update-question question=model update="update"}}
+       </div>
+    </div>
+  </div>
+</div>
+
+<!-- {{new-answer saveAnswer="saveAnswer" post=model destroyAnswer='destroyAnswer' update='update'}} -->
+<br>
+{{question-detail question=model destroyQuestion="destroyQuestion" destroyQuestion="destroyQuestion" update="update"}}
