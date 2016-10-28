@@ -1,3 +1,7 @@
-<li>{{answer.content}} by {{answer.author}}</li>
-
-<button {{action 'delete' answer}}>Delete Answer</button>
+<div class="well" id="answers">
+  <div class="well" id="answerWell">
+    <h8>{{answer.answer}}<br> - by {{answer.author}}</h8>
+  </div>
+  {{update-answer answer=answer update="update"}}
+  <button id="delButton" {{action 'delete' answer}}>Delete Answer</button>
+</div>
