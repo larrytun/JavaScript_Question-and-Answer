@@ -7,7 +7,6 @@
          <p>{{model.date}}</p>
          <p>{{model.content}}</p>
          <p><img src="{{model.avatar}}"></p>
-         <button {{action 'delete' post}}>Delete</button>
          {{update-question question=model update="update"}}
        </div>
     </div>
@@ -16,4 +15,4 @@
 
 {{new-answer saveAnswer="saveAnswer" question=model destroyAnswer='destroyAnswer' update='update'}}
 <br>
-{{question-detail question=model destroyQuestion="destroyQuestion" destroyQuestion="destroyQuestion" update="update"}}
+{{question-detail question=model destroyQuestion="destroyQuestion" update="update"}}

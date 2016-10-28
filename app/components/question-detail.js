@@ -14,8 +14,6 @@ export default Ember.Component.extend({
       this.sendAction('destroyAnswer', answer);
     },
     update(answer, params) {
-      console.log(answer);
-      console.log(params);
       this.sendAction('update', answer, params);
     }
   }
