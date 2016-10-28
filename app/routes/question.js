@@ -5,6 +5,24 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
+    update(question, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          question.set(key,params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('index');
+    },
+    destroyQuestion(question) {
+      var answer_deletions = question.get('answers').map(function(answer) {
+        return answer.destroyRecord();
+      });
+      Ember.RSVP.all(answer_deletions).then(function() {
+        return question.destroyRecord();
+      });
+      this.transitionTo('index');
+    },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
@@ -14,19 +32,9 @@ export default Ember.Route.extend({
       });
       this.transitionTo('question', question);
     },
-    destroyAnswer(answer, question) {
+    destroyAnswer(answer) {
       answer.destroyRecord();
-      this.transitionTo('question', question);
-    },
-    update(answer, params) {
-      var question = params.question;
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          answer.set(key, params[key]);
-        }
-      });
-      answer.save();
-      this.transitionTo('question', question);
+      this.transitionTo('index');
     }
   }
 });
