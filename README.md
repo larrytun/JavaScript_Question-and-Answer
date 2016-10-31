@@ -14,11 +14,12 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <"https://github.com/larrytun/Question-and-Answer">` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
 * `ember install ember-bootstrap`
+
 
 ## Running / Development
 
@@ -42,6 +43,17 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Specify what it takes to deploy your app.
+
+### Specs
+
+| Behavior | Input Ex. | Output Ex. |
+| --- | --- | --- |
+| It can save a question including the username, title, date, content, and avatar | Username: Larry, Title: Why is the sky blue, Date: July 15th 2016, Content: Why is the sky blue? Please tell me. Avatar: "pic.url"  | Why is the sky blue by Larry |
+| It can save answers to questions including the username and answer content | Name: Joe, Answer: It just is | It just is - by Joe |
+| A user can edit questions | Title: Why is the ocean blue? | Why is the ocean blue by Larry |
+| A user can edit answers | Name: Joe Jackson | It just is - by Joe Jackson |
+| A user can delete questions | Why is the sky blue by Larry | (deleted) |
+
 
 ## Further Reading / Useful Links
 
