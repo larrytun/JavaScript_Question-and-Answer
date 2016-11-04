@@ -10,6 +10,6 @@ export default Ember.Component.extend({
     },
     update(answer, params) {
       this.sendAction('update', answer, params);
-    }
+    },
   }
 });
