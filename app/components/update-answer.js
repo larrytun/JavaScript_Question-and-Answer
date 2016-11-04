@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get('author'),
         content: this.get('content'),
-        rating: this.get('rating'),
+        rating: parseInt(this.get('rating')),
       };
       this.set('updateAnswerForm', false);
       this.sendAction('update', answer, params);
