@@ -1,0 +1,9 @@
+{{#each favoriteQuestions.favorites as |favorite|}}
+  <div class= "well" id="postBody">
+    <h1>{{favorite.title}}</h1>
+    <h3>{{favorite.author}}</h3>
+    <p>{{favorite.date}}</p>
+    <p>{{favorite.content}}</p>
+    <p><img src="{{favorite.avatar}}"></p>
+  </div>
+{{/each}}
