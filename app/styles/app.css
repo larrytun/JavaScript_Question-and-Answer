@@ -15,6 +15,10 @@
   font-size: 90px;
 }
 
+.hot{
+  float: right;
+  margin-right: 50px;
+}
 
 .navLink1{
   display: inline-block;
@@ -42,8 +46,14 @@ p, h1, h2, h3 ,h4 ,h5, h6, h7, h8, h9, a{
   font-family: 'Cabin', sans-serif;
 }
 
-h9{
+h9 {
   color: red;
+}
+
+h10 {
+  color: red;
+  font-family: 'Frijole', cursive;
+  font-size: 30px;
 }
 
 body {
